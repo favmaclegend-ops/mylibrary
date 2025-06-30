@@ -16,29 +16,31 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="flex items-center justify-between p-4 bg-white shadow">
-			<div className="flex items-center space-x-2">
-				<img
-					src="/author.jpg"
-					alt="Author"
-					className="h-8 w-8 rounded-full"
-				/>
-				<span className="font-bold text-lg">Author Name</span>
-			</div>
-			<div className="space-x-4 flex items-center">
-				<Link href="/">Home</Link>
-				<Link href="/Books">Books</Link>
-				<Link href="/About">About</Link>
-				<Link href="/Blog">Blog</Link>
-				<Link href="/Store">Store</Link>
-				<Link href="/Contact">Contact</Link>
-				{loggedIn && (
-					<button
-						onClick={handleLogout}
-						className="bg-red-500 text-white px-3 py-1 rounded">
-						Logout
-					</button>
-				)}
+		<nav className="bg-[#8B5C2A] text-white px-4 py-3 shadow">
+			<div className="flex items-center justify-between">
+				<div className="flex items-center space-x-2">
+					<img
+						src="/author.jpg"
+						alt="Author"
+						className="h-8 w-8 rounded-full"
+					/>
+					<span className="font-bold text-lg">Author Name</span>
+				</div>
+				<div className="space-x-4 flex items-center">
+					<Link href="/">Home</Link>
+					<Link href="/Books">Books</Link>
+					<Link href="/About">About</Link>
+					<Link href="/Blog">Blog</Link>
+					<Link href="/Store">Store</Link>
+					<Link href="/Contact">Contact</Link>
+					{loggedIn && (
+						<button
+							onClick={handleLogout}
+							className="bg-red-500 text-white px-3 py-1 rounded">
+							Logout
+						</button>
+					)}
+				</div>
 			</div>
 		</nav>
 	);

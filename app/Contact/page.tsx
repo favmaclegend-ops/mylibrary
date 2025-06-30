@@ -1,5 +1,4 @@
 "use client";
-// import Navbar from "../components/Navbar";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
@@ -7,30 +6,35 @@ export default function Contact() {
 	return (
 		<>
 			<Navbar />
-			<section className="p-8 max-w-md mx-auto">
-				<h2 className="text-2xl font-bold mb-4">Contact</h2>
-				<form className="flex flex-col space-y-4">
+			<section className="p-8 max-w-2xl mx-auto min-h-screen flex flex-col items-center text-center">
+				<h2 className="text-2xl font-serif text-amber-900 font-bold mb-2">
+					Contact
+				</h2>
+				<p className="text-gray-700 font-serif mb-4">
+					Reach out for collaborations, questions, or just to say hello!
+				</p>
+				<form className="flex flex-col space-y-4 w-full max-w-md mx-auto">
 					<input
 						type="text"
 						placeholder="Your Name"
-						className="border rounded p-2"
+						className="border border-amber-700 rounded-full p-2 shadow font-serif"
 						required
 					/>
 					<input
 						type="email"
 						placeholder="Your Email"
-						className="border rounded p-2"
+						className="border border-amber-700 rounded-full p-2 shadow font-serif"
 						required
 					/>
 					<textarea
 						placeholder="Your Message"
-						className="border rounded p-2"
+						className="border border-amber-700 rounded-lg p-2 shadow font-serif"
 						rows={4}
 						required
 					/>
 					<button
 						type="submit"
-						className="bg-blue-600 text-white px-4 py-2 rounded">
+						className="bg-amber-700 text-white px-4 py-2 rounded shadow hover:bg-amber-800 transition font-serif">
 						Send Message
 					</button>
 				</form>
